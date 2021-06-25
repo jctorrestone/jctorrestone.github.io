@@ -1,0 +1,106 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    font-family: 'Bad Script', cursive;
+}
+
+nav {
+    text-align: center;
+}
+
+.navbar-brand {
+    width: 10vw;
+}
+
+.navbar-nav a {
+    width: 5vw;
+}
+
+.top-video .bio-video {
+    text-align: center;
+    padding: 60px;
+}
+
+.middle-yourself .bio-pic {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-pic img {
+    width: 288px; 
+    height: 384px;
+    border-radius: 20%;
+}
+
+.middle-yourself .bio-description {
+    padding: 50px;
+    padding-left: 0;
+    font-size: x-large;
+}
+
+.bio-description a {
+    text-decoration: none;
+    color: white;
+}
+
+.bio-description a:hover {
+    transition: .6s ease;
+    color: slategrey;
+}
+
+.bio-description i {
+    padding: 10px;
+}
+
+.bottom-repository .col {
+    padding: 60px;
+}
+
+.bottom-repository .repository-pic {
+    margin: auto;
+    position: relative;
+    width: 500px; 
+    height: 250px;
+    border-radius: 50px;
+}
+
+.repository-pic img {
+    width: 500px; 
+    height: 250px; 
+    border-radius: 50px;
+}
+
+.img-message {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .6s ease;
+    pointer-events: none;
+    background-color:slategrey;
+}
+
+.repository-pic:hover .overlay{
+    opacity: 0.7;
+}
+
+.bottom-repository .repository-description {
+    padding-top: 50px;
+    text-align: center;
+    font-size: x-large;
+}
