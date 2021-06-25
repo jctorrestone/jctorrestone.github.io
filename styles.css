@@ -104,3 +104,18 @@ nav {
     text-align: center;
     font-size: x-large;
 }
+
+.bottom-repository .btn-project {
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    border: solid;
+    border-radius: 20em;
+}
+
+.bottom-repository .btn-project:hover {
+    transition: .6s ease;
+    background-color: slategrey;
+}
