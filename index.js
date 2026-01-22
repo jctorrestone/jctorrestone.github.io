@@ -1,6 +1,18 @@
+window.onload = () => {
+    const lis = document.querySelectorAll("li");
+    lis.forEach(li => li.onclick = () => renderComponent(li.getAttribute("component")));
+}
+
 function renderComponent(component) {
     const side = document.getElementById("side");
 
-    ctor = customElements.get("about-page")
-    side.appendChild(ctor());
+    if(side.lastChild) {
+        side.lastChild.remove();
+    }
+
+    const ctor = customElements.get(component);
+
+    if(ctor) {
+        side.appendChild(new ctor());
+    }
 }

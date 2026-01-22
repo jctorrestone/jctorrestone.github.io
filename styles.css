@@ -3,4 +3,9 @@ body {
     color: white;
     margin: 0;
     font-family: 'Bad Script', cursive;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
 }
