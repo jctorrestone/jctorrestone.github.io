@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:host {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+:host:before, :host:after {
+    content: "";
+}
+
+.about-title {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.about-title h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.about-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.about-description p {
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.about-network {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-network a {
+    text-decoration: none;
+    color: inherit;
+}

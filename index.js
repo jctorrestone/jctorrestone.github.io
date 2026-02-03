@@ -4,7 +4,7 @@ window.onload = () => {
 }
 
 function renderComponent(component) {
-    const side = document.getElementById("side");
+    const side = document.querySelector("aside");
 
     if(side.lastChild) {
         side.lastChild.remove();
@@ -14,5 +14,6 @@ function renderComponent(component) {
 
     if(ctor) {
         side.appendChild(new ctor());
+        side.style.visibility = "visible";
     }
 }

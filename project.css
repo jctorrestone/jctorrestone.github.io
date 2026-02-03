@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:host {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+:host:before, :host:after {
+    content: "";
+}
+
+.project-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.project-title i {
+    cursor: pointer;
+}
+
+.project-title h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.project-preview {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.project-preview img {
+    width: 100%;
+}
+
+.project-description {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.project-description p {
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.project-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 0 50px;
+}
+
+.project-technologies {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-technologies h3{
+    white-space: nowrap;
+}
+
+.project-technologies ul {
+    padding: 20px;
+}
+
+.project-repository {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-repository a {
+    text-decoration: none;
+    color: inherit;
+}
