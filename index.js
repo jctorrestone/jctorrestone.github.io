@@ -1,19 +1,20 @@
 window.onload = () => {
     const lis = document.querySelectorAll("li");
-    lis.forEach(li => li.onclick = () => renderComponent(li.getAttribute("component")));
+    lis[0].onclick = () => renderComponent("projects-page");
+    lis[1].onclick = () => renderComponent("about-page");
 }
 
-function renderComponent(component) {
-    const side = document.querySelector("aside");
+function renderComponent(component, attrs=null) {
+    const aside = document.querySelector("aside");
 
-    if(side.lastChild) {
-        side.lastChild.remove();
+    if(aside.lastChild) {
+        aside.lastChild.remove();
     }
 
     const ctor = customElements.get(component);
 
     if(ctor) {
-        side.appendChild(new ctor());
-        side.style.visibility = "visible";
+        attrs? aside.appendChild(new ctor(attrs)) : aside.appendChild(new ctor());
+        aside.style.visibility = "visible";
     }
 }

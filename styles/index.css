@@ -17,13 +17,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    align-items: center;
     flex: 1 1 40%;
     min-height: 733px;
-}
-
-.presentation {
-    width: 100%;
 }
 
 .name {
@@ -33,7 +28,7 @@ main {
 .name h1 {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 .role {
@@ -46,14 +41,9 @@ main {
     text-transform: uppercase;
 }
 
-.pages {
-    width: 100%;
-}
-
 .pages ul {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 300;

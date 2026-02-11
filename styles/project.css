@@ -6,10 +6,9 @@
 
 :host {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 
@@ -20,9 +19,7 @@
 .project-title {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    align-self: flex-start;
     gap: 20px;
     padding: 0 50px;
 }
@@ -39,22 +36,25 @@
 
 .project-preview {
     width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 0 50px;
 }
 
-.project-preview img {
+.project-preview iframe {
     width: 100%;
+    aspect-ratio: 1/0.5625;
 }
 
 .project-description {
     width: 100%;
-    padding: 0 50px;
-}
-
-.project-description p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-family: "Merriweather", serif;
     font-weight: normal;
     font-size: 1.5rem;
+    padding: 0 50px;
 }
 
 .project-info {

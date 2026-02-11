@@ -1,26 +1,30 @@
 [
     {
-        "title": "Project A",
-        "description": "Sed sit amet ex sit amet eros tristique mollis. Sed finibus eleifend lacus, non imperdiet arcu pharetra et. ",
-        "tech": [],
+        "title": "Movie Hangman",
+        "desc": "The goal of this project is to recreate the guessing game called Hangman, where the player gives a letter every turn to try to guess the hidden text. Every time the player fails at guessing a letter, a part of the hangman is drawn. The game ends whether the player guesses the hidden text or the hangman is fully drawn.",
+        "full_desc": [
+            "In this project, the player will first pick a difficulty from a range of difficulties stored in a csv file. The higher the difficulty, higher the number of words the player will have to guess. After that, the program will randomly pick a movie from the OMDb API, that matches the number of words needed.",
+            "The program will show the highest score achieved at the chosen difficulty and the player will have 6 tries to guess the movie:",
+            "If the player guess the title of the movie, their score will be increased by one and the program will check whether the score is higher than the highest score. If the score is higher, it will be written to the csv file and another movie title will be generated for the player to guess.",
+            "If the player fails 6 times at guessing the movie, the answer will be revealed and they will be sent to the difficulty menu."
+        ],
+        "preview": "https://www.youtube.com/embed/ZQqOl2_nx2k?si=zXbJJB_jQ5NQ9M3a",
+        "techs": ["Python", "Pytest"],
         "repo": ""
     },
     {
-        "title": "Project B",
-        "description": "Sed sit amet ex sit amet eros tristique mollis. Sed finibus eleifend lacus, non imperdiet arcu pharetra et. ",
-        "tech": [],
-        "repo": ""
-    },
-    {
-        "title": "Project C",
-        "description": "Sed sit amet ex sit amet eros tristique mollis. Sed finibus eleifend lacus, non imperdiet arcu pharetra et. ",
-        "tech": [],
-        "repo": ""
-    },
-    {
-        "title": "Project D",
-        "description": "Sed sit amet ex sit amet eros tristique mollis. Sed finibus eleifend lacus, non imperdiet arcu pharetra et. ",
-        "tech": [],
+        "title": "Awesome Recipes",
+        "desc": "The goal of this web application is to let users post recipes and share them with other users. They must first create their account in order to be able to post dishes. Then they must confirm their email by clicking on a link sent to them. Once their account is activated, they can post their recipes, like other recipes or save them.",
+        "full_desc": [
+            "This project lets users search for the different recipes posted by other users, they can also like or save the recipes, but first they will have to create an account.",
+            "In order to create an account, users will have to register with their email and confirm it.",
+            "Once registered, they will be able to post, edit and delete their recipes. They can also update their personal information and change their password.",
+            "If users can't remember their password, they have the option to reset their password by entering their email and following the instructions sent by email.",
+            "The web page is served with the help of Flask, with one blueprint rendering the templates and the other one for an api required to interact with the client.", 
+            "The recipes are stored in a sqlite file except for the pictures which are stored in Cloudinary."
+        ],
+        "preview": "https://www.youtube.com/embed/WxXOxBL6JIA?si=RZxgVeWiapheE6Qv",
+        "techs": ["HTML", "Javascript", "Python", "SQL", "Flask", "Bootstrap"],
         "repo": ""
     }
 ]
